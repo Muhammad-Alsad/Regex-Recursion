@@ -37,7 +37,12 @@ Example: n = 4 ==> 3, n= 0 ==> 0, n = 3 ==> 2 */
 
 function fibonacci(n) {
     // Write you logic here.
-    return;
+    if (n==1 || n==0){
+        return n
+    }else{
+        return fibonacci(n-1) + fibonacci(n-2)
+    }
+    
 }
 
 /* Optional 
@@ -83,7 +88,7 @@ describe("Test pow", () => {
 });
 
 describe("Test fibonacci", () => {
-    test.skip("It should implement fibonacci series logic", () => {
+    test("It should implement fibonacci series logic", () => {
         expect(fibonacci(0)).toStrictEqual(0);
         expect(fibonacci(1)).toStrictEqual(1);
         expect(fibonacci(2)).toStrictEqual(1);
