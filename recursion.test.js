@@ -58,7 +58,7 @@ function permutations(n, k) {
 
 
 describe("Test division", () => {
-    test.skip("Return the division result", () => {
+    test("Return the division result", () => {
         expect(division(10, 2)).toStrictEqual(5);
         expect(division(10, 0)).toStrictEqual(0);
         expect(division(0, 10)).toStrictEqual(0);
@@ -67,7 +67,7 @@ describe("Test division", () => {
 });
 
 describe("Test pow", () => {
-    test.skip("It should work as Math.pow(x,n)", () => {
+    test("It should work as Math.pow(x,n)", () => {
         expect(pow(10, 2)).toStrictEqual(100);
         expect(pow(10, 0)).toStrictEqual(1);
         expect(pow(0, 0)).toStrictEqual(1);
@@ -75,7 +75,7 @@ describe("Test pow", () => {
 });
 
 describe("Test fibonacci", () => {
-    test.skip("It should implement fibonacci series logic", () => {
+    test("It should implement fibonacci series logic", () => {
         expect(fibonacci(0)).toStrictEqual(0);
         expect(fibonacci(1)).toStrictEqual(1);
         expect(fibonacci(2)).toStrictEqual(1);
