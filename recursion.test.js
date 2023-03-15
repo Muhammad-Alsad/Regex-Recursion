@@ -4,11 +4,7 @@ const { identifier } = require("@babel/types");
 
 function division(number, dividedBy) {
     // Write you logic here.
-    if (((number == 0)|| (dividedBy == 0))||((number < 0)||(dividedBy < 0) )){
-        return 0;
-    }else {
-        return(1+ division(number-dividedBy,dividedBy));        
-    }
+
 }
 
 /* Write a function that implement Math.pow(x,n) but using recursion
@@ -18,12 +14,7 @@ pow(2,4) = 16
 
 
 function pow(x, n) {
-    if (n==0){
-        return(1)
-    }
-    else {
-        return (x *pow(x,n-1));
-    }
+ 
 }
 
 /* The Fibonacci Series is a numeric series starting with the integers 0 and 1. In this series,
@@ -37,7 +28,8 @@ Example: n = 4 ==> 3, n= 0 ==> 0, n = 3 ==> 2 */
 
 function fibonacci(n) {
     // Write you logic here.
-    return;
+
+    
 }
 
 /* Optional 
@@ -66,7 +58,7 @@ function permutations(n, k) {
 
 
 describe("Test division", () => {
-    test("Return the division result", () => {
+    test.skip("Return the division result", () => {
         expect(division(10, 2)).toStrictEqual(5);
         expect(division(10, 0)).toStrictEqual(0);
         expect(division(0, 10)).toStrictEqual(0);
@@ -75,7 +67,7 @@ describe("Test division", () => {
 });
 
 describe("Test pow", () => {
-    test("It should work as Math.pow(x,n)", () => {
+    test.skip("It should work as Math.pow(x,n)", () => {
         expect(pow(10, 2)).toStrictEqual(100);
         expect(pow(10, 0)).toStrictEqual(1);
         expect(pow(0, 0)).toStrictEqual(1);
